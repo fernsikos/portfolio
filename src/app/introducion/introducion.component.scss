@@ -1,6 +1,5 @@
 .introducion {
     min-height: 100vh;
-    // width: 100vw;
     background-color: #141D2F;
     display: flex;
     flex-direction: column;
@@ -14,6 +13,7 @@
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        margin-bottom: 70px;
         z-index: 2;
 
         .upper-container {
@@ -56,23 +56,6 @@
                 line-height: 127%
             }
         }
-
-        // ::before {
-        //     content: '';
-        //     position: absolute;
-        //     bottom: 0;
-        //     left: 50%;
-        //     width: 100vh;
-        //     height: 100vh;
-        //     background-color: #142f2c;
-        //     // border-radius: 50%;
-        //     border-radius: 0 0 59% 0/0 0 14% 0;
-        //     transform-origin: bottom;
-        //     transform: translateX(-50%) scale(4);
-        //     z-index: -1;
-
-        // }
-
     }
 
     .devider-left {
@@ -82,6 +65,7 @@
         display: flex;
         align-items: center;
         color: white;
+        z-index: 2;
 
         a {
             display: flex;
@@ -90,10 +74,15 @@
             margin-left: 24px;
             color: #fff;
             text-decoration: none;
+            cursor: pointer;
+
+            img {
+                width: 34px;
+            }
         }
 
         .bar {
-            height: 2px;
+            height: 3px;
             width: 100px;
             background-color: #1ce6b6;
         }
@@ -108,23 +97,52 @@
         color: white;
     }
 
-
-    .green-1 {
+    .button {
         position: absolute;
+        text-decoration: none;
+        left: 0;
         right: 0;
-        top: 20px;
+        margin: auto;
+        bottom: 230px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 52px;
+        width: 143px;
+        border-radius: 10px;
+        background-color: #00BEE8;
+        box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+        font-size: 16px;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #4B47FF;
+            height: 60px;
+            width: 151px;
+            font-size: 18px;
+        }
+    }
+
+    //Background shadows
+    #green-1 {
+        position: absolute;
+        right: -246px;
+        top: 76px;
         height: 600px;
         z-index: 1;
+        rotate: 71deg;
 
     }
 
-    .purple-1 {
+    #purple-1 {
         position: absolute;
-        left: -66px;
-        top: 46px;
+        left: -414px;
+        top: 182px;
         height: 778px;
         z-index: 1;
-        rotate: 56deg;
+        rotate: 68deg;
 
     }
 

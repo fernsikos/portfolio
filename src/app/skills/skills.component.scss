@@ -1,5 +1,79 @@
 .skills-container {
-    width: 100vw;
     height: 100vh;
+    position: relative;
     background-color: #141D2F;
+    display: flex;
+    align-items: center;
+
+    .button {
+        margin-top: 35px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 52px;
+        width: 143px;
+        border-radius: 10px;
+        background-color: #00BEE8;
+        box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+        font-size: 16px;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #4B47FF;
+            height: 60px;
+            width: 151px;
+            font-size: 18px;
+        }
+    }
+    
+
+    .devider {
+        width: 100%;
+        position: absolute;
+        top: -137px;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .container-left {
+        width: 60%;
+        z-index: 1;
+
+    }
+
+    .container-right {
+        width: 40%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        overflow: hidden;
+        
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: white;
+            font-size: 70px;
+            font-weight: bold;
+
+            .bar {
+                margin-left: 24px;
+                height: 3px;
+                width: 400px;
+                background-color: #1ce6b6;
+            }
+        }
+
+        span {
+            color: white;
+            padding-right: 50px;
+        }
+    }
+
 }

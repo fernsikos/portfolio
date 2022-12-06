@@ -8,6 +8,7 @@ import { IntroducionComponent } from './introducion/introducion.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
