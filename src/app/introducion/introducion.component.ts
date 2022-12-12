@@ -11,5 +11,4 @@ export class IntroducionComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

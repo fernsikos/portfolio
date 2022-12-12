@@ -6,7 +6,26 @@ html {
 body {
      margin: 0;
      font-family: Poppins, sans-serif;
+     color: white;
      background-color: #141D2F;
+}
+
+.ml {
+     margin-left: 50px;
+}
+
+.mr {
+     margin-right: 50px;
+}
+
+@media (max-width:400px) {
+     .ml {
+          margin-left: 25px;
+     }
+
+     .mr {
+          margin-right: 25px;
+     }
 }
 
 /* poppins-100 - latin */
