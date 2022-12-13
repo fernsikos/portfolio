@@ -10,10 +10,13 @@
 
     .name-container {
         height: fit-content;
+        position: relative;
         display: flex;
         flex-direction: column;
         overflow: hidden;
         margin-bottom: 70px;
+        margin-left: 50px;
+        margin-right: 50px;
         z-index: 2;
 
         .upper-container {
@@ -21,10 +24,12 @@
             font-size: 60px;
             font-weight: 600;
             line-height: 100%;
+            position: absolute;
         }
 
         .lower-container {
             display: flex;
+            margin-top: 60px;
 
             .container-left {
                 color: white;
@@ -115,6 +120,7 @@
         box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
         font-size: 16px;
         transition: all 0.3s;
+        z-index: 3;
         cursor: pointer;
 
         &:hover {
@@ -128,7 +134,7 @@
     //Background shadows
     #green-1 {
         position: absolute;
-        right: -246px;
+        right: -340px;
         top: 76px;
         height: 600px;
         z-index: 1;
@@ -146,4 +152,217 @@
 
     }
 
+}
+
+@media (max-width:895px) {
+    .introducion {
+        .name-container {
+            .upper-container {
+                font-size: 45px;
+                line-height: 85%;
+            }
+
+            .lower-container {
+                margin-top: 30px;
+
+                .container-left {
+                    font-size: 39px;
+                    padding-left: 13px;
+                    line-height: 212%;
+                }
+
+                .container-right {
+                    margin-left: -10px;
+
+                    .name {
+                        font-size: 60px;
+                    }
+
+                    .profession {
+                        font-size: 37px;
+                        line-height: 87%;
+                    }
+                }
+
+            }
+        }
+
+        #green-1 {
+            right: -408px;
+        }
+
+        #purple-1 {
+            left: -418px;
+        }
+    }
+}
+
+@media (max-width:702px) {
+    .introducion {
+        #email {
+            display: none !important;
+        }
+
+        .devider-left {
+            a {
+                margin-left: 30px;
+            }
+        }
+
+        .name-container {
+            .upper-container {
+                font-size: 33px;
+                padding-top: 13px;
+                line-height: 21%;
+            }
+
+            .lower-container {
+                margin-top: 15px;
+
+                .container-left {
+                    font-size: 29px;
+                    padding-left: 23px;
+                }
+
+                .container-right {
+                    margin-left: -20px;
+
+                    .name {
+                        font-size: 45px;
+                    }
+
+                    .profession {
+                        font-size: 27px;
+                        line-height: 33%;
+                    }
+                }
+
+            }
+        }
+
+        .button {
+            bottom: 265px;
+            width: 134px;
+            height: 44px;
+        }
+    }
+}
+
+@media (max-width:650px) {
+    .introducion {
+        .name-container {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
+}
+
+@media (max-width:506px) {
+    .introducion {
+        .devider-right {
+            display: none;
+        }
+
+        .devider-left {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            a {
+                margin: 0 15px;
+            }
+
+            .bar {
+                display: none;
+            }
+        }
+
+        .name-container {
+            .upper-container {
+                font-size: 24px;
+            }
+
+            .lower-container {
+                margin-top: 2px;
+
+                .container-left {
+                    font-size: 21px;
+                    line-height: 310%;
+                    padding-left: 25px;
+                }
+
+                .container-right {
+                    margin-top: 12px;
+                    margin-left: -18px;
+
+                    .name {
+                        font-size: 34px;
+                        line-height: 53px;
+                    }
+
+                    .profession {
+                        font-size: 20px;
+                        line-height: 0;
+                    }
+                }
+
+            }
+        }
+
+        .button {
+            bottom: 322px;
+            width: 111px;
+            height: 36px;
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width:402px) {
+    .introducion {
+        .name-container {
+            .upper-container {
+                font-size: 16px;
+                padding-top: 13px;
+                line-height: 21%;
+                top: 13px
+            }
+
+            .lower-container {
+                .container-left {
+                    font-size: 14px;
+                    padding-left: 23px;
+                    line-height: 390%;
+                }
+
+                .container-right {
+                    margin-left: -20px;
+                    margin-top: 25px;
+
+                    .name {
+                        font-size: 23px;
+                        line-height: 35px;
+                    }
+
+                    .profession {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:290px) {
+    .introducion {
+        .name-container {
+            .lower-container {
+                .container-right {
+                    .name {
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
 }
