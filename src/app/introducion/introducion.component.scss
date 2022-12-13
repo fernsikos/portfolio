@@ -15,8 +15,6 @@
         flex-direction: column;
         overflow: hidden;
         margin-bottom: 70px;
-        margin-left: 50px;
-        margin-right: 50px;
         z-index: 2;
 
         .upper-container {
@@ -154,7 +152,7 @@
 
 }
 
-@media (max-width:895px) {
+@media (max-width:994px) {
     .introducion {
         .name-container {
             .upper-container {
@@ -248,16 +246,7 @@
     }
 }
 
-@media (max-width:650px) {
-    .introducion {
-        .name-container {
-            margin-left: 25px;
-            margin-right: 25px;
-        }
-    }
-}
-
-@media (max-width:506px) {
+@media (max-width:556px) {
     .introducion {
         .devider-right {
             display: none;
@@ -318,7 +307,7 @@
     }
 }
 
-@media (max-width:402px) {
+@media (max-width:451px) {
     .introducion {
         .name-container {
             .upper-container {

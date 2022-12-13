@@ -10,7 +10,6 @@ header {
     justify-content: space-between;
     border-bottom: 1px solid #1BE6B6;
     z-index: 5;
-    padding-left: 50px;
 
     .logo {
         color: white;
@@ -69,30 +68,36 @@ header {
         }
     }
 
-    a {
-        color: white;
-        text-decoration: none;
-        position: relative;
-        font-size: 22px;
+    .menu-container {
+        
+        a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+            font-size: 22px;
+            margin-left: 25px;
 
-        &::before {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 100%;
-            height: 2px;
-            bottom: -3px;
-            left: 0;
-            background-color: #1BE6B6;
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 2px;
+                bottom: -3px;
+                left: 0;
+                background-color: #1BE6B6;
+                transform: scaleX(0);
+                transition: transform 0.3s ease;
 
+            }
+
+            &:hover::before {
+                transform: scaleX(1);
+            }
         }
 
-        &:hover::before {
-            transform: scaleX(1);
-        }
     }
+
 
     // Burger-Icon
 
@@ -149,8 +154,9 @@ header {
         stroke-width: 6;
     }
 
-    
+
 }
+
 //Mobile-Menu
 
 .mobile-menu-container {
@@ -179,7 +185,7 @@ header {
             position: relative;
             font-size: 22px;
             margin-bottom: 22px;
-    
+
             &::before {
                 content: "";
                 position: absolute;
@@ -191,9 +197,9 @@ header {
                 background-color: #1BE6B6;
                 transform: scaleX(0);
                 transition: transform 0.3s ease;
-    
+
             }
-    
+
             &:hover::before {
                 transform: scaleX(1);
             }
@@ -219,27 +225,26 @@ header {
 }
 
 @media (max-width:650px) {
-   header {
-    padding-left: 25px;
-    .menu {
-        margin-right: -10px;
-        transform: scale(0.5);
-    }
+    header {
 
-    .logo {
-        transform: scale(0.8);
-        margin-left: -20px;
+        .menu {
+            margin-right: -10px;
+            transform: scale(0.5);
+        }
+
+        .logo {
+            transform: scale(0.8);
+            margin-left: -20px;
+        }
     }
-   }
 }
 
 @media (max-width:330px) {
     header {
-        
+
         .logo {
             transform: scale(0.7);
             margin-left: -31px;
         }
-       }
+    }
 }
-

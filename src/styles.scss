@@ -11,20 +11,53 @@ body {
 }
 
 .ml {
-     margin-left: 50px;
+     margin-left: 100px;
 }
 
 .mr {
-     margin-right: 50px;
+     margin-right: 100px;
 }
 
-@media (max-width:432px) {
+.pl {
+     padding-left: 100px;
+}
+
+.pr {
+     padding-right: 100px;
+}
+
+@media (max-width:900px) {
+     .ml {
+          margin-left: 50px;
+     }
+     
+     .mr {
+          margin-right: 50px;
+     }
+     
+     .pl {
+          padding-left: 50px;
+     }
+     
+     .pr {
+          padding-right: 50px;
+     }
+}
+
+@media (max-width:650px) {
      .ml {
           margin-left: 25px;
      }
 
      .mr {
           margin-right: 25px;
+     }
+     .pl {
+          padding-left: 25px;
+     }
+     
+     .pr {
+          padding-right: 25px;
      }
 }
 
