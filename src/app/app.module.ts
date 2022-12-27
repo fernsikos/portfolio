@@ -12,6 +12,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FooterComponent } from './footer/footer.component';
+import { StartComponent } from './start/start.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 
 
@@ -24,7 +27,10 @@ import { FooterComponent } from './footer/footer.component';
     SkillsComponent,
     PortfolioComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    StartComponent,
+    ImprintComponent,
+    LegalNoticeComponent
   ],
   imports: [
     BrowserModule,
