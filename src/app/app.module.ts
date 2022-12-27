@@ -8,6 +8,11 @@ import { IntroducionComponent } from './introducion/introducion.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactComponent } from './contact/contact.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FooterComponent } from './footer/footer.component';
+
 
 
 @NgModule({
@@ -17,11 +22,16 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     IntroducionComponent,
     AboutMeComponent,
     SkillsComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule ,
+    MatFormFieldModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

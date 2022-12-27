@@ -1,5 +1,5 @@
 header {
-    height: 70px;
+    height: 100px;
     background-color: #141D2F;
     position: absolute;
     left: 0;
@@ -8,7 +8,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #1BE6B6;
+    border-bottom: 2px solid #1BE6B6;
     z-index: 5;
 
     .logo {
