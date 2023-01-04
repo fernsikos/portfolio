@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { StartComponent } from './start/start.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { SendEmailSuccessComponent } from './send-email-success/send-email-success.component';
 
 
 
@@ -30,7 +31,8 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
     FooterComponent,
     StartComponent,
     ImprintComponent,
-    LegalNoticeComponent
+    LegalNoticeComponent,
+    SendEmailSuccessComponent
   ],
   imports: [
     BrowserModule,

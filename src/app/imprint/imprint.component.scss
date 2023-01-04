@@ -1,5 +1,10 @@
 .imprint-container {
-    margin-top: 100px;
-
+    margin-top: 200px;
+    margin-bottom: 100px;
     min-height: calc(100vh - 204px);
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 }
