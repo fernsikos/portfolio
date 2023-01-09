@@ -27,6 +27,24 @@ body {
      padding-right: 100px;
 }
 
+@media(min-width:1700px) {
+     .ml {
+          margin-left: 200px;
+     }
+     
+     .mr {
+          margin-right: 200px;
+     }
+     
+     .pl {
+          padding-left: 200px;
+     }
+     
+     .pr {
+          padding-right: 200px;
+     }
+}
+
 @media (max-width:900px) {
      .ml {
           margin-left: 50px;

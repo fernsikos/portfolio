@@ -26,6 +26,10 @@
             display: flex;
             align-items: center;
             margin-top: 24px;
+
+            img {
+                margin-right: 16px;
+            }
         }
     }
 
@@ -280,6 +284,109 @@
     .about-me-container {
         .devider {
             bottom: -401px;
+        }
+    }
+}
+
+@media (max-width:835px) {
+    .about-me-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 60px;
+        padding-right: 50px;
+
+        .devider {
+            top: 497px;
+        }
+        
+        .container-left {
+            z-index: 1;
+            width: 60vw;
+        }
+        
+        .container-right {
+            display: flex;
+            justify-content: center;
+
+            img {
+                position: unset;
+                margin: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 702px) {
+    .about-me-container {
+        .container-left {
+            h2 {
+                font-size: 50px;
+            }
+        }
+
+        .container-right {
+
+            img {
+                height: 450px;
+            }
+        }
+
+        .devider {
+            top: 362px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .about-me-container {
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-me-container {
+        .container-left {
+
+            span {
+                font-size: 14px;
+            }
+
+            img {
+                height: 55px;
+                width: 55px;
+            }
+        }
+    }
+}
+
+@media (max-width: 362px) {
+    .about-me-container {
+        .container-left {
+
+            h2 {
+                font-size: 38px;
+            }
+
+            .info {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 45px;
+            }
+
+            span {
+                margin-top: 24px;
+            }
+        }
+
+        .container-right {
+
+            img {
+                height: 320px;
+            }
+        }
+
+        .devider {
+            top: 277px;
         }
     }
 }

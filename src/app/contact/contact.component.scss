@@ -54,6 +54,8 @@
 
         .contact-form {
             width: 50%;
+            position: relative;
+            margin-bottom: 80px;
 
             form {
                 display: flex;
@@ -105,7 +107,9 @@
                 }
 
                 button {
-                    margin-top: 35px;
+                    position: absolute;
+                    bottom: -79px;
+                    left: 50px;
                     color: white;
                     text-decoration: none;
                     display: flex;
