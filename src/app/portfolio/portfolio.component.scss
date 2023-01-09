@@ -20,6 +20,7 @@
             font-size: 70px;
             font-weight: bold;
             position: relative;
+            margin-left: 100px;
             // margin-bottom: 58px;
 
             .bar {
@@ -196,6 +197,13 @@
         }
 
        
+    }
+}
+
+@media (max-width: 702px) {
+    .title {
+        font-size: 50px !important;
+        margin-left: 50px !important;
     }
 }
 
