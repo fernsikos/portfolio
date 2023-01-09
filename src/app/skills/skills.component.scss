@@ -1,27 +1,24 @@
 .skills-container {
-    
+
     position: relative;
     // background-color: #141D2F;
     display: flex;
     align-items: center;
-    z-index: 2 ;
+    z-index: 2;
     margin-top: 100px;
     margin-bottom: 50px;
 
-  
-    
 
-    
+
+   
+
 
     .container-left {
         width: 60%;
         z-index: 3;
-       display: flex;
-       justify-content: space-between;
-       margin-right: 50px;
-        
-
-        
+        display: flex;
+        justify-content: space-between;
+        margin-right: 50px;
 
         .col {
             display: flex;
@@ -29,7 +26,7 @@
             justify-content: space-between;
             font-size: 14px;
             font-weight: bold;
-            
+
 
             .icon-container {
                 display: flex;
@@ -55,8 +52,38 @@
             .blind-filler {
                 min-height: 98px;
             }
+
         }
 
+    }
+
+    .button,
+    .button-small {
+        margin-top: 35px;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 52px;
+        width: 143px;
+        border-radius: 10px;
+        background-color: #00BEE8;
+        box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+        font-size: 16px;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #4B47FF;
+            height: 60px;
+            width: 151px;
+            font-size: 18px;
+        }
+    }
+
+    .button-small {
+        position: absolute;
     }
 
     .container-right {
@@ -69,30 +96,7 @@
         overflow: hidden;
         position: relative;
         padding-bottom: 100px;
-        
-        .button {
-            margin-top: 35px;
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 52px;
-            width: 143px;
-            border-radius: 10px;
-            background-color: #00BEE8;
-            box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
-            font-size: 16px;
-            transition: all 0.3s;
-            cursor: pointer;
-    
-            &:hover {
-                background-color: #4B47FF;
-                height: 60px;
-                width: 151px;
-                font-size: 18px;
-            }
-        }
+
 
         .title {
             display: flex;
@@ -103,12 +107,14 @@
 
             span {
                 padding-right: 24px !important;
+                margin-bottom: 58px;
             }
 
             .bar {
                 height: 3px;
                 width: 400px;
                 background-color: #1ce6b6;
+                margin-bottom: 58px;
             }
         }
 
@@ -120,4 +126,131 @@
         }
     }
 
+}
+
+@media (max-width: 835px) {
+    .skills-container {
+        flex-direction: column-reverse;
+
+        .container-left {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 50px;
+            width: calc(100vw - 100px);
+        }
+
+        .container-right {
+            width: 100%;
+            padding-bottom: 50px;
+
+            span {
+                margin-left: 50px;
+            }
+
+            .title {
+
+                .bar {
+                    width: 600px;
+                }
+
+            }
+
+            .button {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 835px) {
+    .button-small {
+        display: none !important;
+    }
+}
+
+@media (max-width: 702px) {
+    .button-small {
+        width: 134px !important;
+        height: 44px !important;
+
+        &:hover {
+            height: 52px !important;
+            width: 142px !important;
+        }
+    }
+
+    .title {
+        span {
+            font-size: 50px;
+        }
+    }
+}
+
+@media (max-width: 556px) {
+    .button-small {
+        width: 120px !important;
+        height: 36px !important;
+        font-size: 13px !important;
+
+        &:hover {
+            height: 42px !important;
+            width: 128px !important;
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    .display-large {
+        display: none !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .display-small {
+
+        .col {
+
+            .icon-container {
+                margin-bottom: 23px !important;
+
+                img {
+                    height: 40px !important;
+                    width: 40px !important;
+                }
+
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .container-left {
+        margin-bottom: 100px !important;
+    }
+}
+
+@media (min-width: 500px) {
+    .display-small {
+        display: none !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .container-right > span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    .hide-small {
+        display: none !important;
+    }
+
+}
+
+@media (min-width: 350px) {
+    .display-smallest {
+        display: none !important;
+    }
 }
