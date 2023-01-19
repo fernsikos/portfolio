@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-introducion',
@@ -7,8 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroducionComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private viewportScroller: ViewportScroller,
+    public router: Router
+    ) { }
 
   ngOnInit(): void {
+  }
+
+  onClickScroll(elementId: string): void {
+    console.log
+    this.router.navigate(['/']);
+    setTimeout(() => {
+      this.viewportScroller.scrollToAnchor(elementId);
+    }, 100);
   }
 }

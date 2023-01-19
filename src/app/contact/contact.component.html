@@ -13,13 +13,15 @@
             </div>
         </div>
         <div class="contact-form mr">
-            <form action="http://tobias-fernkorn.com/e-mail-client/send_mail.php" method="post">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email">
-                <textarea class="textarea" name="message" placeholder="Your message"></textarea> 
-                <button type="submit">Send message</button>
+            <form [formGroup]="contactForm" (keydown)="keyDownFunction($event)" (submit)="sendMail()" ngNativeValidate>
+                <input data-aos="fade-right" type="text" name="name" placeholder="Name" required formControlName="name">
+                <input type="email" name="email" placeholder="Email" required formControlName="email">
+                <textarea class="textarea" name="message" placeholder="Your message" required formControlName="message"></textarea> 
+                <button type="submit" [disabled]="isDisabled">Send message</button>
             </form>
 
         </div>
     </div>
+    <img src="../../assets/img/background-vector/shadowpurple3.webp" alt="" class="vector4">
+
 </div>

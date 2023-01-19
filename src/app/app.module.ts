@@ -16,6 +16,8 @@ import { StartComponent } from './start/start.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { SendEmailSuccessComponent } from './send-email-success/send-email-success.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -38,8 +40,9 @@ import { SendEmailSuccessComponent } from './send-email-success/send-email-succe
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule ,
-    MatFormFieldModule
-
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

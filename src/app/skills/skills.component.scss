@@ -7,10 +7,18 @@
     z-index: 2;
     margin-top: 100px;
     margin-bottom: 50px;
+    overflow-x: clip;
 
 
+    .vector2 {
+        position: absolute;
+        height: 525px;
+        right: -116px;
+        bottom: -327px;
+        rotate: 82deg;
 
-   
+    }
+
 
 
     .container-left {
@@ -162,7 +170,7 @@
     }
 }
 
-@media (min-width: 835px) {
+@media (min-width: 836px) {
     .button-small {
         display: none !important;
     }
@@ -183,6 +191,12 @@
         span {
             font-size: 50px !important;
         }
+    }
+
+    .vector2 {
+        height: 513px !important;
+        right: -177px !important;
+        bottom: -327px !important;
     }
 }
 
@@ -225,6 +239,7 @@
             }
         }
     }
+
     .container-left {
         margin-bottom: 100px !important;
     }
@@ -237,7 +252,7 @@
 }
 
 @media (max-width: 400px) {
-    .container-right > span {
+    .container-right>span {
         font-size: 14px;
     }
 }

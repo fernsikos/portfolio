@@ -10,7 +10,7 @@
         text-align: center;
         max-width: 400px;
         position: relative;
-        margin-bottom: 52px;
+        margin-bottom: 100px;
         h1 {
             font-size: 60px;
             margin-top: 0;
@@ -46,6 +46,68 @@
                 height: 60px;
                 width: 151px;
                 font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .success-container {
+        .card {
+            h1 {
+                font-size: 40px;
+            }
+
+            .button {
+                height: 38px;
+                width: 118px;
+                font-size: 14px;
+                &:hover {
+                    height: 44px;
+                    width: 126px;
+                    font-size: 16px;
+                }
+               
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .success-container {
+        .card {
+            h1 {
+                font-size: 30px;
+            }
+
+            .button {
+                height: 38px;
+                width: 118px;
+                font-size: 14px;
+
+                &:hover {
+                    height: 44px;
+                    width: 126px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .success-container {
+        .card {
+            .button {
+                height: 30px;
+                width: 106px;
+                font-size: 12px;
+
+                &:hover {
+                    height: 38px;
+                    width: 112px;
+                    font-size: 14px;
+                }
             }
         }
     }

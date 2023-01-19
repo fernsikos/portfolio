@@ -9,6 +9,7 @@ body {
      color: white;
      background-color: #141D2F;
      height: unset !important;
+     overflow: overlay;
 }
 
 .ml {
@@ -26,6 +27,29 @@ body {
 .pr {
      padding-right: 100px;
 }
+
+//Scollbar Styling /* width */
+::-webkit-scrollbar {
+     width: 8px;
+     
+   }
+   
+   /* Track */
+   ::-webkit-scrollbar-track {
+    
+   }
+   
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+     background: #ABABAD;
+     -webkit-border-radius: 8px;
+   }
+   
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+     background: #cacacc;
+     
+   }
 
 @media(min-width:1700px) {
      .ml {

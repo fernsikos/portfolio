@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    position: relative;
 
 
     .title {
@@ -87,6 +88,10 @@
                         border: 2px solid #00BEE7;
                         outline: none;
                     }
+
+                    // &:required {
+                    //     border: 2px solid #e44e28;
+                    // }
                 }
 
                 textarea {
@@ -138,6 +143,10 @@
                         width: 168px;
                         font-size: 18px;
                     }
+
+                    &:disabled {
+                        background-color: #335e66;
+                    }
                 }
             }
 
@@ -145,6 +154,13 @@
         }
     }
 
+    .vector4 {
+        position: absolute;
+        height: 540px;
+        right: -194px;
+        rotate: 232deg;
+        bottom: -226px;
+    }
 }
 
 @media (max-width:812px) {
@@ -215,6 +231,12 @@
 
     .content {
         margin-right: 25px !important;
+    }
+
+    .vector4 {
+        right: -168px !important;
+        rotate: 238deg !important;
+        bottom: -259px !important;
     }
 }
 

@@ -1,5 +1,5 @@
 .portfolio-container {
-
+    position: relative;
     margin-bottom: 100px;
 
     .title-container {
@@ -48,7 +48,7 @@
         .row {
             display: flex;
             gap: 50px;
-            
+
             &:first-child {
                 margin-bottom: 50px;
 
@@ -153,6 +153,14 @@
             }
         }
     }
+
+    .vector3 {
+        position: absolute;
+        bottom: -28px;
+        height: 548px;
+        left: -254px;
+        rotate: 176deg
+    }
 }
 
 @media (max-width: 1266px) {
@@ -196,7 +204,7 @@
             font-size: 18px !important;
         }
 
-       
+
     }
 }
 
@@ -215,9 +223,11 @@
         span {
             display: none;
         }
+
         .hover {
             .btn-container {
                 margin: 0 !important;
+
                 .button {
                     height: 24px !important;
                     width: 75px !important;
@@ -225,5 +235,9 @@
                 }
             }
         }
+    }
+
+    .vector3 {
+        height: 482px !important;
     }
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
+import { ViewportScroller } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-skills',
@@ -8,10 +10,21 @@ import * as AOS from 'aos';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private viewportScroller: ViewportScroller,
+    public router: Router
+  ) { }
 
   ngOnInit(): void {
     AOS.init()
+  }
+
+  onClickScroll(elementId: string): void {
+    console.log
+    this.router.navigate(['/']);
+    setTimeout(() => {
+      this.viewportScroller.scrollToAnchor(elementId);
+    }, 100);
   }
 
 }

@@ -13,7 +13,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
+        // overflow: hidden;
         margin-bottom: 70px;
         z-index: 2;
 
@@ -59,6 +59,35 @@
                 line-height: 127%
             }
         }
+
+        .button {
+            position: absolute;
+            text-decoration: none;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: -91px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 52px;
+            width: 143px;
+            border-radius: 10px;
+            background-color: #00BEE8;
+            box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+            font-size: 16px;
+            transition: all 0.3s;
+            z-index: 3;
+            cursor: pointer;
+    
+            &:hover {
+                background-color: #4B47FF;
+                height: 60px;
+                width: 151px;
+                font-size: 18px;
+            }
+        }
     }
 
     .devider-left {
@@ -100,34 +129,7 @@
         color: white;
     }
 
-    .button {
-        position: absolute;
-        text-decoration: none;
-        left: 0;
-        right: 0;
-        margin: auto;
-        bottom: 230px;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 52px;
-        width: 143px;
-        border-radius: 10px;
-        background-color: #00BEE8;
-        box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
-        font-size: 16px;
-        transition: all 0.3s;
-        z-index: 3;
-        cursor: pointer;
-
-        &:hover {
-            background-color: #4B47FF;
-            height: 60px;
-            width: 151px;
-            font-size: 18px;
-        }
-    }
+    
 
     //Background shadows
     #green-1 {
@@ -236,19 +238,18 @@
                 }
 
             }
-        }
-
-        .button {
-            bottom: 265px;
-            width: 134px;
-            height: 44px;
-
-            &:hover {
-                height: 52px;
-                width: 142px;
-                
+            .button {
+                width: 134px;
+                height: 44px;
+    
+                &:hover {
+                    height: 52px;
+                    width: 142px;
+                    
+                }
             }
         }
+
     }
 }
 
@@ -302,24 +303,23 @@
                 }
 
             }
+            .button {
+                width: 111px;
+                height: 36px;
+                font-size: 13px;
+    
+                &:hover {
+                    height: 44px;
+                    width: 119px;
+                    font-size: 15px;
+                }
+            }
         }
         
         #green-1 {
             right: -470px;
         }
 
-        .button {
-            bottom: 322px;
-            width: 111px;
-            height: 36px;
-            font-size: 13px;
-
-            &:hover {
-                height: 44px;
-                width: 119px;
-                font-size: 15px;
-            }
-        }
     }
 }
 

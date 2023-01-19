@@ -1,5 +1,5 @@
 <header>
-    <div class="logo pl">
+    <div routerLink="/" class="logo pl">
         <div class="logo-item">
             <div class="corner"></div>
             <div class="center">
@@ -9,9 +9,9 @@
         <div class="logo-text-container">Fe<section>r</section>nkorn</div>
     </div>
     <div class="menu-container pr">
-        <a href="#about-me">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <a (click)="onClickScroll('about-me')">About me</a>
+        <a (click)="onClickScroll('skills')">Skills</a>
+        <a (click)="onClickScroll('portfolio')">Portfolio</a>
     </div>
 
     <button class="menu" id="burger" (click)="toggleMobileMenu()" aria-label="Main Menu">
@@ -26,8 +26,8 @@
 </header>
 <div class="mobile-menu-container fade" id="mobile-menu">
     <div class="link-container">
-        <a href="#about-me" (click)="toggleMobileMenu()">About me</a>
-        <a href="#skills" (click)="toggleMobileMenu()">Skills</a>
-        <a href="#portfolio" (click)="toggleMobileMenu()">Portfolio</a>
+        <a routerLink="aboutme" (click)="toggleMobileMenu()"  (click)="onClickScroll('about-me')">About me</a>
+        <a routerLink="skills" (click)="toggleMobileMenu()"  (click)="onClickScroll('skills')">Skills</a>
+        <a routerLink="portfolio" (click)="toggleMobileMenu()"  (click)="onClickScroll('portfolio')">Portfolio</a>
     </div>
 </div>

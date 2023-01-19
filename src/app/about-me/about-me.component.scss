@@ -5,8 +5,9 @@
     min-height: 630px;
     z-index: 2;
     background-color: transparent;
-    
-    
+
+
+
 
     .container-left {
         width: 40vw;
@@ -15,7 +16,7 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 60px;
-        
+
 
 
         h2 {
@@ -40,18 +41,30 @@
         left: 0;
         right: 0;
     }
+
     .container-right {
         width: 60vw;
         position: relative;
+        overflow: hidden;
 
 
-        img {
+        .profile {
             position: absolute;
             height: 600px;
             bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
+        }
+
+        .vector1 {
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 641px;
         }
     }
 }
@@ -63,6 +76,7 @@
         }
     }
 }
+
 @media (max-width:1808px) {
     .about-me-container {
         .devider {
@@ -70,6 +84,7 @@
         }
     }
 }
+
 @media (max-width:1780px) {
     .about-me-container {
         .devider {
@@ -77,6 +92,7 @@
         }
     }
 }
+
 @media (max-width:1756px) {
     .about-me-container {
         .devider {
@@ -84,6 +100,7 @@
         }
     }
 }
+
 @media (max-width:1707px) {
     .about-me-container {
         .devider {
@@ -91,6 +108,7 @@
         }
     }
 }
+
 @media (max-width:1686px) {
     .about-me-container {
         .devider {
@@ -98,6 +116,7 @@
         }
     }
 }
+
 @media (max-width:1657px) {
     .about-me-container {
         .devider {
@@ -105,6 +124,7 @@
         }
     }
 }
+
 @media (max-width:1625px) {
     .about-me-container {
         .devider {
@@ -112,6 +132,7 @@
         }
     }
 }
+
 @media (max-width:1585px) {
     .about-me-container {
         .devider {
@@ -119,6 +140,7 @@
         }
     }
 }
+
 @media (max-width:1549px) {
     .about-me-container {
         .devider {
@@ -126,6 +148,7 @@
         }
     }
 }
+
 @media (max-width:1485px) {
     .about-me-container {
         .devider {
@@ -133,6 +156,7 @@
         }
     }
 }
+
 @media (max-width:1455px) {
     .about-me-container {
         .devider {
@@ -140,6 +164,7 @@
         }
     }
 }
+
 @media (max-width:1413px) {
     .about-me-container {
         .devider {
@@ -147,6 +172,7 @@
         }
     }
 }
+
 @media (max-width:1376px) {
     .about-me-container {
         .devider {
@@ -154,6 +180,7 @@
         }
     }
 }
+
 @media (max-width:1350px) {
     .about-me-container {
         .devider {
@@ -161,6 +188,7 @@
         }
     }
 }
+
 @media (max-width:1322px) {
     .about-me-container {
         .devider {
@@ -168,6 +196,7 @@
         }
     }
 }
+
 @media (max-width:1290px) {
     .about-me-container {
         .devider {
@@ -175,6 +204,7 @@
         }
     }
 }
+
 @media (max-width:1255px) {
     .about-me-container {
         .devider {
@@ -182,6 +212,7 @@
         }
     }
 }
+
 @media (max-width:1233px) {
     .about-me-container {
         .devider {
@@ -189,6 +220,7 @@
         }
     }
 }
+
 @media (max-width:1192px) {
     .about-me-container {
         .devider {
@@ -196,6 +228,7 @@
         }
     }
 }
+
 @media (max-width:1170px) {
     .about-me-container {
         .devider {
@@ -203,6 +236,7 @@
         }
     }
 }
+
 @media (max-width:1150px) {
     .about-me-container {
         .devider {
@@ -210,6 +244,7 @@
         }
     }
 }
+
 @media (max-width:1129px) {
     .about-me-container {
         .devider {
@@ -217,6 +252,7 @@
         }
     }
 }
+
 @media (max-width:1113px) {
     .about-me-container {
         .devider {
@@ -224,6 +260,7 @@
         }
     }
 }
+
 @media (max-width:1094px) {
     .about-me-container {
         .devider {
@@ -231,6 +268,7 @@
         }
     }
 }
+
 @media (max-width:1071px) {
     .about-me-container {
         .devider {
@@ -238,6 +276,7 @@
         }
     }
 }
+
 @media (max-width:1033px) {
     .about-me-container {
         .devider {
@@ -245,6 +284,7 @@
         }
     }
 }
+
 @media (max-width:994px) {
     .about-me-container {
         .devider {
@@ -252,6 +292,7 @@
         }
     }
 }
+
 @media (max-width:960px) {
     .about-me-container {
         .devider {
@@ -259,6 +300,7 @@
         }
     }
 }
+
 @media (max-width:930px) {
     .about-me-container {
         .devider {
@@ -266,6 +308,7 @@
         }
     }
 }
+
 @media (max-width:899px) {
     .about-me-container {
         .devider {
@@ -273,6 +316,7 @@
         }
     }
 }
+
 @media (max-width:875px) {
     .about-me-container {
         .devider {
@@ -280,6 +324,7 @@
         }
     }
 }
+
 @media (max-width:850px) {
     .about-me-container {
         .devider {
@@ -292,26 +337,32 @@
     .about-me-container {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 60px;
+        padding-top: 60px;
         padding-right: 50px;
 
         .devider {
             top: 497px;
         }
-        
+
         .container-left {
             z-index: 1;
             width: 60vw;
             margin-bottom: 0;
         }
-        
+
         .container-right {
             display: flex;
             justify-content: center;
+            overflow: unset;
 
-            img {
+            .profile {
                 position: unset;
                 margin: unset;
+            }
+
+            .vector1 {
+                left: unset;
+                right: unset;
             }
         }
     }
@@ -319,6 +370,8 @@
 
 @media (max-width: 702px) {
     .about-me-container {
+        overflow: hidden;
+
         .container-left {
             h2 {
                 font-size: 50px;
@@ -327,8 +380,13 @@
 
         .container-right {
 
-            img {
+            .profile {
                 height: 450px;
+            }
+
+            .vector1 {
+                bottom: -35px;
+                height: 551px;
             }
         }
 
@@ -360,6 +418,20 @@
     }
 }
 
+@media (max-width: 556px) {
+    .about-me-container {
+        .container-right {
+            .profile {
+                height: 406px;
+            }
+
+            .vector1 {
+                height: 498px;
+            }
+        }
+    }
+}
+
 @media (max-width: 362px) {
     .about-me-container {
         .container-left {
@@ -381,14 +453,18 @@
 
         .container-right {
 
-            img {
+            .profile {
                 height: 320px;
+            }
+
+            .vector1 {
+                bottom: -17px;
+                height: 353px;
             }
         }
 
         .devider {
-            top: 277px;
+            top: 300px;
         }
     }
 }
-
