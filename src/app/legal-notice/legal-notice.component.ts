@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-legal-notice',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LegalNoticeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public router: Router,
+    private viewportScroller: ViewportScroller,
+  ) { }
 
   ngOnInit(): void {
   }
 
+  onClickScroll(elementId: string): void {
+    console.log
+    this.router.navigate(['/legal-notice/']);
+    setTimeout(() => {
+      this.viewportScroller.scrollToAnchor(elementId);
+    }, 100);
+  }
 }

@@ -80,7 +80,7 @@
             transition: all 0.3s;
             z-index: 3;
             cursor: pointer;
-    
+
             &:hover {
                 background-color: #4B47FF;
                 height: 60px;
@@ -129,7 +129,7 @@
         color: white;
     }
 
-    
+
 
     //Background shadows
     #green-1 {
@@ -238,14 +238,15 @@
                 }
 
             }
+
             .button {
                 width: 134px;
                 height: 44px;
-    
+
                 &:hover {
                     height: 52px;
                     width: 142px;
-                    
+
                 }
             }
         }
@@ -303,11 +304,12 @@
                 }
 
             }
+
             .button {
                 width: 111px;
                 height: 36px;
                 font-size: 13px;
-    
+
                 &:hover {
                     height: 44px;
                     width: 119px;
@@ -315,11 +317,24 @@
                 }
             }
         }
-        
+
         #green-1 {
             right: -470px;
         }
 
+    }
+}
+
+@media (min-width: 1700px) {
+    #purple-1 {
+        left: -272px !important;
+        height: 956px !important;
+    }
+
+    #green-1 {
+        right: -294px !important;
+        top: 167px !important;
+        height: 798px !important;
     }
 }
 

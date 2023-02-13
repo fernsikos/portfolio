@@ -159,7 +159,18 @@
         bottom: -28px;
         height: 548px;
         left: -254px;
-        rotate: 176deg
+        rotate: 176deg;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 2000px) {
+    .portfolio-container {
+        .vector3 {
+            bottom: -86px !important;
+            height: 789px !important;
+            left: -185px !important;
+        }
     }
 }
 

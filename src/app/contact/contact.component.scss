@@ -14,7 +14,7 @@
 
         .bar {
             height: 3px;
-            width: 1000px;
+            width: 1400px;
             background-color: #00BEE7;
             position: absolute;
             bottom: 33.5px;
@@ -39,16 +39,16 @@
                 h3 {
                     font-size: 24px;
                     position: relative;
-                    margin-left: 100px;
+                    margin-left: 350px;
                     margin-top: 0;
 
                     .bar-left {
                         height: 3px;
-                        width: 300px;
+                        width: 330px;
                         position: absolute;
                         background-color: #1ce6b6;
                         bottom: 11px;
-                        left: -323px;
+                        left: -353px;
                     }
                 }
 
@@ -161,6 +161,34 @@
         rotate: 232deg;
         bottom: -226px;
     }
+}
+
+@media (max-width:2000px) {
+    .contact-container {
+     .contact-content-container {
+         .contact-content {
+             .content {
+                 h3 {
+                     margin-left: 200px;
+                 }
+             }
+         }
+     }
+    }
+ }
+
+@media (max-width:1700px) {
+   .contact-container {
+    .contact-content-container {
+        .contact-content {
+            .content {
+                h3 {
+                    margin-left: 100px;
+                }
+            }
+        }
+    }
+   }
 }
 
 @media (max-width:812px) {

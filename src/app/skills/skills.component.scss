@@ -120,7 +120,7 @@
 
             .bar {
                 height: 3px;
-                width: 400px;
+                width: 870px;
                 background-color: #1ce6b6;
                 margin-bottom: 58px;
             }
@@ -134,6 +134,15 @@
         }
     }
 
+}
+
+@media (min-width: 2000px) {
+    .skills-container {
+        .vector2 {
+            height: 907px !important;
+            bottom: -549px !important;
+        }
+    }
 }
 
 @media (max-width: 835px) {
